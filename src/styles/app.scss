@@ -1,0 +1,43 @@
+// Remove default element styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// imports
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(68, 68, 68);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.App {
+  transition: all 0.5s ease;
+  padding: 0 10%;
+}
+
+.library-active {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0 1%;
+  }
+}

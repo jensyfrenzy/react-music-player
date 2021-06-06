@@ -1,0 +1,51 @@
+.song-container {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+
+  img {
+    width: 40%;
+    border-radius: 10%;
+    transition: all 1s ease;
+
+    &.spin {
+      border-radius: 50%;
+      -webkit-animation: spin 4s linear infinite;
+      animation: spin 4s linear infinite;
+    }
+  }
+
+  h2 {
+    padding: 2rem 1rem 0.1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-container {
+    margin-top: 20%;
+    img {
+      width: 60%;
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
